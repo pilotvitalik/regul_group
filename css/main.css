@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap');
+body,
+.wrapper {
+  padding: 0;
+  margin: 0;
+}
 .navmenu li {
   list-style-type: none;
 }
@@ -62,4 +67,120 @@
   color: #4f4f4f;
   font-weight: 500;
   line-height: 24px;
+}
+.wrapper:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 45.50898204%;
+  height: 770px;
+  background: #004b9a;
+  -webkit-box-shadow: -25px 0 56px 12px rgba(0, 0, 0, 0.33);
+          box-shadow: -25px 0 56px 12px rgba(0, 0, 0, 0.33);
+  z-index: -1000;
+}
+.wrapper:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 54.49101796%;
+  height: 1157px;
+  background: #ededed;
+  z-index: -1111;
+  top: 0;
+}
+.common:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 54.49101796%;
+  height: 1157px;
+  background: #004b9a;
+  z-index: -111;
+  top: 1157px;
+}
+.mainDog {
+  display: block;
+  position: absolute;
+  z-index: -50;
+  top: 121px;
+  right: 4.7%;
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 121px;
+}
+.header div:first-child {
+  display: block;
+  position: relative;
+  width: 94px;
+  height: 80px;
+  margin: 19px auto auto 6.3%;
+}
+.header .navmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 23%;
+  height: 18px;
+  padding: 0;
+  margin: 51px auto auto 2.3%;
+}
+.header .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 31px 12% auto auto;
+}
+.header .phone img {
+  display: block;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin: auto 0;
+}
+.header .phone span {
+  display: inline-block;
+  width: 142px;
+  height: 18px;
+  padding: 0;
+  margin: auto 55px auto 17px;
+}
+.header .phone button {
+  display: block;
+  width: 178px;
+  height: 55px;
+  background: #cd3a0d;
+  border-radius: 3px;
+  border: none;
 }
