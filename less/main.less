@@ -6,7 +6,8 @@
 
 
 body,
-.wrapper{
+.wrapper,
+.common{
 	padding: 0;
 	margin: 0;
 }
@@ -53,6 +54,8 @@ body,
 	font-family: @adFont;
 	font-size: 50px;
 	font-weight: 600;
+	line-height: 60px;
+	letter-spacing: 2px;
 }
 .--h6{
 	font-size: 13px;
@@ -64,8 +67,11 @@ body,
 	font-weight: 500;
 }
 .about--p{
+	display: inline-block;
+	position: absolute;
 	font-size: 18px;
 	font-weight: 500;
+	width: 460px;
 }
 .inspection--p{
 	color: #fff;
@@ -187,5 +193,110 @@ body,
 			border-radius: 3px;
 			border: none;
 		}
+	}
+}
+//======================================
+//		Common--heading, advantage
+//======================================
+.heading{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	width: 450px;
+	height: 200px;
+	padding: 0;
+	margin: 105px auto auto 6.3%;
+	h5,
+	h3{
+		margin: 0;
+	}
+}
+.advantage{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: relative;
+	width: 1120px;
+	height: 156px;
+	padding: 0;
+	margin: 127px auto 148px 6.3%;
+	background: #fff;
+	div{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 293px;
+		height: 100%;
+		img{
+			display: block;
+			position: relative;
+			width: 42px;
+			top: 46px;
+		}
+		h6{
+			display: inline-block;
+			position: relative;
+			width: 90px;
+			left: 81px;
+			margin: 0 0 10px 0;
+		}
+		p{
+			display: inline-block;
+			position: relative;
+			width: 210px;
+			left: 81px;
+			margin: 0;
+		}
+	}
+	div:nth-child(2){
+		width: 298px;
+		p{
+			width: 215px;
+		}
+	}
+	div:last-child{
+		width: 288px;
+		p{
+			width: 205px;
+		}
+	}
+}
+//======================================
+//		Common--about
+//======================================
+.about{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	height: 300px;
+	padding: 0;
+	margin: 0 auto auto 6.3%;
+	p:nth-child(2){
+		top: 65px;
+		left: 0;
+	}
+	h3{
+		display: inline-block;
+		position: absolute;
+		width: 392px;
+		height: 102px;
+		top: 99px;
+		left: 750px;
+		padding: 0;
+		margin: 0;
+		letter-spacing: 2px;
+	}
+	h3:before{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 387px;
+		height: 37px;
+		top: 93px;
+		left: 2.4px;
+		z-index: -111;
+		background: #cd3a0d;
 	}
 }
