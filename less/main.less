@@ -477,7 +477,6 @@ body,
 	height: auto;
 	padding: 0;
 	margin: 7px 0 67px 0;
-	border: @bdef;
 	h3{
 		height: 48px;
 		margin-bottom: 80px;
@@ -550,5 +549,82 @@ body,
 			cursor: pointer;
 		}
 	}
-	
+}
+//======================================
+//		Footer
+//======================================
+.footer{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding-bottom: 65px;
+	background: #ebebeb;
+	.contact,
+	.adress{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 304px;
+		height: 150px;
+		padding: 0;
+		margin: 65px 0 0 6.3%;
+		.navmenu{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			position: relative;
+			padding: 0;
+			margin: 0;
+		}
+		img{
+			width: 81px;
+			height: 65px;
+			margin: 0;
+		}
+		.social{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			position: relative;
+			width: 70%;
+			height: 40px;
+			padding: 0;
+			margin: 0;
+			div{
+				display: block;
+				position: relative;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+			}
+			.social--facebook{
+				background: url(../img/social.jpg);
+				background-position: -0.5px 0;
+			}
+			.social--vk{
+				background: url(../img/social.jpg);
+				background-position: -72.5px 0;
+			}
+			.social--instagram{
+				background: url(../img/social.jpg);
+				background-position: -146.5px 0;
+			}
+		}
+	}
+	.adress{
+		width: 360px;
+		margin-left: auto;
+		margin-right: 11.9%;
+		p{
+			margin: 0;
+		}
+		p:nth-child(2){
+			margin-top: 17px;
+		}
+		p:nth-child(3){
+			margin-bottom: 17px;
+		}
+	}
 }
